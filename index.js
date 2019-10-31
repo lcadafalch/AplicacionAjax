@@ -8,7 +8,7 @@ function getEmpleados() {
         "url": "http://dummy.restapiexample.com/api/v1/employees",
         "dataType": "json",
         "headers": { "Content-Type": "application/json" },
-        "success": (data) => { PrintEmpleados(data) },
+        "success": (data) => { PrintEmpleados(data),añadirUsuario() },
         "error": (error) => { console.log(error) }
 
     })
@@ -61,7 +61,7 @@ function preparaEventos() {
 
                 $.ajax({
                     "type": "DELETE",
-                    "url": "http://dummy.restapiexample.com/delete/" + idUsuario,
+                    "url": "http://dummy.restapiexample.com/api/v1/delete/" + idUsuario,
                     "dataType": "json",
                     "headers": { "Content-Type": "application/json" },
                     "success": (data) => {
@@ -98,10 +98,11 @@ function añadirUsuario() {
 
     }
     $('.botoninsertar').click(() => {
+        console.log("funciona");
         $.ajax({
 
             "type": "POST",
-            "url": "http://dummy.restapiexample.com/create",
+            "url": "http://dummy.restapiexample.com/api/v1/create",
             "dataType": "json",
             "data": JSON.stringify(modeloEmpleado),
             "headers": { "Content-Type": "application/json", "X-Requested-With": "XMLHttpRequest" },
@@ -118,17 +119,7 @@ function añadirUsuario() {
 
 //FUNCTION GET LUPA
 
-// function getLupa
-// $.ajax({
-//     "type": "GET",
-//     "url": "http://dummy.restapiexample.com/api/v1/employees",
-//     "dataType": "json",
-//     "headers": { "Content-Type": "application/json" },
-//     "success": (data) => { PrintEmpleados(data) },
-//     "error": (error) => { console.log(error) }
-
-// })
-// $.("")
+// function getLupa()
 
 
 getEmpleados()
