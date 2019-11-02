@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <h1>Aplicación control Usuarios</h1>
+    <h1 class="titulo">Aplicación control Usuarios</h1>
     <div class="card">
         <div class="card-body">
             <div class="card">
@@ -25,9 +25,10 @@
                         <div class="row">
                             <div class="col-sm"></div>
                             <div class="col-sm"> </div>
-                            <div class="col-sm"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            <div class="col-sm"><button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModal">
                                     Añadir Empleado
-                                  </button></div>
+                                </button></div>
                         </div>
                     </div>
                 </div>
@@ -42,14 +43,11 @@
                 </div>
                 <div class="col-10">
                     <!-- Content -->
-
+                    <!-- TABLA DE CONTENIDO DE USUARIOS -->
                     <table class="table">
                         <div>
                             <div class="card">
-                                <div class="card-body">
 
-                                    <p>Buscar Usuario</p> <input type="text" name="f1t1" id="f1t1">
-                                </div>
                             </div>
 
                         </div>
@@ -89,72 +87,56 @@
 
                         </tbody>
                     </table>
+                    <div class="col-1">
+                        <!-- Content -->
+                    </div>
                 </div>
-            </div>
-            <div class="col-1">
-                <!-- Content -->
-            </div>
-        </div>
-        <div><!-- Modal -->
-            <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Añadir empleados</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Name</p><input type="text" name="f1t1" id="f1t1" class="name_modal"><hr>
-                    <p>Salary</p><input type="text" name="f1t1" id="f1t1" class="salary_modal"><hr>
-                    <p>Age</p><input type="text" name="f1t1" id="f1t1" class="age_modal">
-                    <!-- <input id hidden> -->
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary botoninsertar">Insertar</button>
-                  </div>
-                </div>
-              </div>
-            </div></div>
-            <!-- Modal -->
-<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Añadir empleados</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                
-              </button>
-            </div>
-            <div class="modal-body">
-              
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary enviarusuario">Nuevo Usuario</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                <div>
+                    <!-- MODAL SUPERIOR , DE LA PETICION POST -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Añadir empleados</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Name</p><input type="text" name="f1t1" id="name1" class="name_modal">
+                                    <hr>
+                                    <p>Salary</p><input type="text" name="f1t1" id="salary1" class="salary_modal">
+                                    <hr>
+                                    <p>Age</p><input type="text" name="f1t1" id="1" class="age_modal">
+                                    <!-- <input id hidden> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary botoninsertar">Insertar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-     
-        <script src="index.js">  </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script src="index.js">  </script>
 </body>
 
 </html>

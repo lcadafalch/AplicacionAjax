@@ -1,5 +1,5 @@
 
-//FUNCIÓN GET DE LOS EMPLEADOS
+//PETICIÓN GET DE LOS EMPLEADOS
 
 
 function getEmpleados() {
@@ -49,7 +49,7 @@ function PrintEmpleados(arrEmpleados) {
 }
 
 
-//FUNCIÓN DELETE EMPLEADOS
+//FUNCIÓN DELETE EMPLEADOS RESOLVIENDO EL PROBLEMA DEL ICONO 
 
 function preparaEventos() {
 
@@ -85,20 +85,20 @@ function preparaEventos() {
 }
 
 
-// FUNCIÓN AÑADIR USUARIO
+// FUNCIÓN AÑADIR USUARIO A PARTIR DEL MODAL SUPERIOR
 
 function añadirUsuario() {
 
 
     let modeloEmpleado = {
 
-        "name": $(".name_modal").val(),
-        "salary": $(".salary_modal").val(),
-        "age": $(".age_modal").val()
+        "name": $("#name1").val(),
+        "salary": $("#salary1").val(),
+        "age": $("#age1").val()
 
     }
-    $('.botoninsertar').click(() => {
-        console.log("funciona");
+    $('.botoninsertar').click(() =>{
+        
         $.ajax({
 
             "type": "POST",
@@ -119,7 +119,7 @@ function añadirUsuario() {
 
 //FUNCTION GET LUPA
 
-// function getLupa()
+//  function getLupa()
 
 
 getEmpleados()
